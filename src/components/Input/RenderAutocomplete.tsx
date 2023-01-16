@@ -4,10 +4,10 @@ import { CountryInfo } from "../../types/types";
 
 interface Props {
     isShow: boolean;
-    value: any;
-    countries: any;
+    value: string;
+    countries: CountryInfo[];
     divRef: any;
-    active: any;
+    active: number;
 }
 
 export const RenderAutocomplete = ({

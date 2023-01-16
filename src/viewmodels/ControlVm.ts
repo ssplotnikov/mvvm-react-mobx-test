@@ -30,7 +30,7 @@ export default class ControlVm {
             (country: CountryInfo) => !this.helpsArray.includes(country.name)
         );
     }
-    actionSetCountries = (data: any) => {
+    actionSetCountries = (data: CountryInfo[]) => {
         this.countries = data;
     };
 

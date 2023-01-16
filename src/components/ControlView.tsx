@@ -19,8 +19,15 @@ const ControlView = ({ vm }: ControlProps) => {
         maxHelps = 0,
     } = vm.model;
     return (
-        <div>
-            <div>
+        <div
+            style={{
+                display: "flex",
+                gap: "10px",
+                alignItems: "center",
+                margin: "10px",
+            }}
+        >
+            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
                 {btnLeft?.map(({ id, title, cb }) => {
                     return (
                         <div key={id}>
@@ -41,7 +48,13 @@ const ControlView = ({ vm }: ControlProps) => {
                     maxHelps={maxHelps}
                 />
             </div>
-            <div>
+            <div
+                style={{
+                    display: "flex",
+                    gap: "10px",
+                    alignItems: "center",
+                }}
+            >
                 {btnRight?.map(({ id, title, cb }) => {
                     return (
                         <div key={id}>
